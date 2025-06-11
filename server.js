@@ -10,25 +10,24 @@ app.get('/api/microservices', async (req, res) => {
     const containers = await docker.listContainers();
 
     const services = containers
-      .map(container => {
-        const name = container.Names[0].replace('/', '');
+  .map(container => {
+    const name = container.Names?.[0]?.replace('/', '');
 
-        // Exclude Apollo-Mission-Control itself and containers with 'lavin' in the name
-        if (name.includes('apollo-mission-control') || /lavin/i.test(name)) return null;
+    // Exclude Apollo-Mission-Control and anything with "lavin" in the name
+    if (!name || name.includes('apollo-mission-control') || /lavin/i.test(name)) return null;
 
-        // Get first available public TCP port that's not 8503
-        const frontendPort = container.Ports.find(
-          p => p.Type === 'tcp' && p.PublicPort && p.PublicPort !== PORT
-        );
+    const frontendPort = Array.isArray(container.Ports)
+      ? container.Ports.find(p => p.Type === 'tcp' && p.PublicPort && p.PublicPort !== PORT)
+      : null;
 
-        if (!frontendPort) return null;
+    if (!frontendPort) return null;
 
-        return {
-          title: name,
-          dockerPublicPort: frontendPort.PublicPort,
-        };
-      })
-      .filter(Boolean); // Remove null values
+    return {
+      title: name,
+      dockerPublicPort: frontendPort.PublicPort,
+    };
+  })
+  .filter(Boolean); // Remove null values
 
     res.json(services);
   } catch (error) {
