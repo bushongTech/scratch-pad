@@ -1,0 +1,438 @@
+channels:
+  'Chemical Totalizer':
+    channels:
+      'TOT-0300':
+        type: "sensor"
+        data_type: "float"
+        unit: "lbs"
+
+  'Manufacturing Totalizer':
+    channels:
+      'TOT-0400':
+        type: "sensor"
+        data_type: "float"
+        unit: "lbs"
+
+  'My Application':
+    channels:
+      'DMP-0302':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'EV-0209':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'EV-0212':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'EV-0213':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'EV-0408':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'EV-0408A':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'EV-040X':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'HUM-0200':
+        type: "sensor"
+        data_type: "float"
+        unit: "percentage"
+      'HUM-0301':
+        type: "sensor"
+        data_type: "float"
+        unit: "percentage"
+      'IMP-0300':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'LS-0300':
+        type: "sensor"
+        data_type: "bool"
+        unit: "binary"
+      'LS-0301':
+        type: "sensor"
+        data_type: "bool"
+        unit: "binary"
+      'LS-0302':
+        type: "sensor"
+        data_type: "bool"
+        unit: "binary"
+      'LS-0303':
+        type: "sensor"
+        data_type: "bool"
+        unit: "binary"
+      'LS-0304':
+        type: "sensor"
+        data_type: "bool"
+        unit: "binary"
+      'LS-0305':
+        type: "sensor"
+        data_type: "bool"
+        unit: "binary"
+      'LS-0306':
+        type: "sensor"
+        data_type: "bool"
+        unit: "binary"
+      'LS-0400':
+        type: "sensor"
+        data_type: "bool"
+        unit: "binary"
+      'LS-0401':
+        type: "sensor"
+        data_type: "bool"
+        unit: "binary"
+      'LS-0402':
+        type: "sensor"
+        data_type: "bool"
+        unit: "binary"
+      'LS-0403':
+        type: "sensor"
+        data_type: "bool"
+        unit: "binary"
+      'LS-0404':
+        type: "sensor"
+        data_type: "bool"
+        unit: "binary"
+      'PPMP-0300':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'PT-0200':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0201':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0202':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0203':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0204':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0205':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0206':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0300':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0301':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0303':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0306':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0307':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0400':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0401':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0402':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0403':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0406':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0407':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0440':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PT-0450':
+        type: "sensor"
+        data_type: "float"
+        unit: "psi"
+      'PV-0210':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'PV-0301':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'PV-0302':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'PV-0304':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'PV-0305':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'PV-0306':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'PV-0308':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'PV-0309':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'PV-0400':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'PV-0402':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'PV-0426':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'PV-0426A':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'RPM-0400':
+        type: "sensor"
+        data_type: "float"
+        unit: "rpm"
+      'RPM-0401':
+        type: "sensor"
+        data_type: "float"
+        unit: "rpm"
+      'SV-0413':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'SV-0417':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'SV-0420':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'SV-0420A':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'SV-0421':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'SV-0422':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'SV-0423':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'SV-0424':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'SV-0425':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'TI-0200':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0201':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0202':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0203':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0204':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0301':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0302':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0303':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0304':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0306':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0307':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0308':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0400':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0401':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0402':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0404':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0407':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'TI-0408':
+        type: "sensor"
+        data_type: "float"
+        unit: "f"
+      'VB-0300':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'VB-0301':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'VFDE-0200':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'VFDE-0201':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'VFDE-0301':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'VFDE-0303':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'VFDE-0400':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'VFDE-0401':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'VFDE-0402':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'VFDE-0403':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'VFDE-0404':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+      'VFDS-0301':
+        type: "control"
+        data_type: "float"
+        unit: "mV"
+      'VFDS-0302':
+        type: "control"
+        data_type: "float"
+        unit: "mV"
+      'VFDS-0303':
+        type: "control"
+        data_type: "float"
+        unit: "mV"
+      'VFDS-0400':
+        type: "control"
+        data_type: "float"
+        unit: "mV"
+      'VFDS-0401':
+        type: "control"
+        data_type: "float"
+        unit: "mV"
+      'VFDS-0402':
+        type: "control"
+        data_type: "float"
+        unit: "mV"
+      'VFDS-0403':
+        type: "control"
+        data_type: "float"
+        unit: "mV"
+      'VFDS-0404':
+        type: "control"
+        data_type: "float"
+        unit: "mV"
+      'VPMS-0200':
+        type: "control"
+        data_type: "bool"
+        unit: "binary"
+
+      # Channels with value 0
+      'R-0300': 0  # regulator
+      'R-0301': 0  # regulator
+      'SFT-0200': 0  # Software Interlock
