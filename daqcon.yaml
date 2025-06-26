@@ -1,0 +1,14 @@
+# IP address of the LabVIEW system (destination for command packets)
+DeviceIP: '192.168.10.25'
+
+# Translator sends command packets to this port on the LabVIEW system
+DevicePortTx: 29099
+
+# Translator listens on this port for telemetry data from LabVIEW
+DevicePortRx: 24242
+
+# Source name included in telemetry packets when publishing to LavinMQ
+Source: "MainControl"
+
+# Bootstrap server for publishing/subscribing messages
+BootstrapServer: '192.168.10.14:9093'
