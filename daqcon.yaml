@@ -1,14 +1,14 @@
-# IP address of the LabVIEW system (destination for command packets)
+# IP address of the DAQ device — actively used
 DeviceIP: '192.168.10.25'
 
-# Translator sends command packets to this port on the LabVIEW system
+# Transmit port from translator to DAQ — actively used
 DevicePortTx: 29099
 
-# Translator listens on this port for telemetry data from LabVIEW
+# Receive port from DAQ to translator — actively used
 DevicePortRx: 24242
 
-# Source name included in telemetry packets when publishing to LavinMQ
+# Source name used in message headers — actively used
 Source: "MainControl"
 
-# Bootstrap server for publishing/subscribing messages
-BootstrapServer: '192.168.10.14:9093'
+# Kafka bootstrap server (not used by translator_udp.py; connection comes from message_broker_config.yaml via common.MessageBroker)
+BootstrapServer: '192.168.10.14:9093'  # unused
